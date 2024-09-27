@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-right: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+nav ul li a.active {
+  background-color: white;
+  color: black;
+}
+
+/* Project Section Layout */
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.project {
+  width: 95%;
+  margin: auto;
+}
+
+.project h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+}
+
+.image-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Right Column for Project Media and Description */
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.project-media {
+  border: 2px solid black;
+  padding: 15px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.project-description {
+  padding: 20px;
+  border: 2px solid black;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
